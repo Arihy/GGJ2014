@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+
 
 public class PlayerController : Players {
 
@@ -46,5 +48,5 @@ public class PlayerController : Players {
 		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
 		GUI.Label(new Rect(20,60,80,20), "Speed : " + _speed);
 	}
-	
+
 }
