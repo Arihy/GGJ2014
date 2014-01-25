@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 	private Transform _transform;
 	private float _speed;
+	public Transform _bullet;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +15,25 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		_transform.localRotation = Utils.lookAt(_transform.position, Input.mousePosition, Vector3.up);
+		/*
+		Ray ray = Camera.mainCamera.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hit;
+		if(Physics.Raycast(ray, out hit))
+			_lookTarget = hit.point;
+			*/
+		Vector3 lookTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		lookTarget.z = 0;
+		_transform.localRotation = Utils.lookAt(_transform.position, lookTarget, Vector3.up);
+		Debug.Log("position mouse " + Camera.main.ScreenToWorldPoint(Input.mousePosition));
+
+		if(Input.GetMouseButton(0))
+		{
+			//if(Time.time > nextFire)
+			//{
+				//nextFire = Time.time + fireRate;
+			Instantiate(_bullet, _transform.position, _transform.rotation);
+			//}
+		}
 	}
 
 	void FixedUpdate()
