@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: 5e3565e221f860b4f9ea59318e76ed73
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - fatigue: {fileID: 8300000, guid: bc385606ce419184da05aaded89136c7, type: 3}
+  - _bullet: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
