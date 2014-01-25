@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class IAEnemy : MonoBehaviour {
-
+	int direction;
 	int i;
 	int etat;
 	Vector2 movingTo;
@@ -20,6 +20,7 @@ public class IAEnemy : MonoBehaviour {
 	float randomY;
 	
 	void Awake(){
+		direction = 0 ;
 		speed = 3;
 		i = 0;
 		etat = 1;
@@ -44,18 +45,71 @@ public class IAEnemy : MonoBehaviour {
 	}
 
 	void changeDirection(){
+		direction = Random.Range(0, 4);
+		if(direction == 0)
+		{
+			//en bas
+			randomX = 0.0f; 
+			randomY = -10.0f; //  
+		}
+		if(direction == 1)
+		{
+			//en haut
+			randomX = 0.0f;
+			randomY = 10.0f;
+		}
+		if(direction == 2)
+		{
+			// à gauche
+			randomX = -10.0f;
+			randomY = 0.0f;
+		}
+		if(direction == 3)
+		{
+			// à droite
+			randomX = 10.0f;
+			randomY = 0.0f;
+		}
+		/*if(direction == 4)
+		{
+			// à droite
+			randomX = 5.0f;
+			randomY = 5.0f;
+		}
+		if(direction == 5)
+		{
+			// à droite
+			randomX = 5.0f;
+			randomY = -5.0f;
+		}
+		if(direction == 6)
+		{
+			// à droite
+			randomX = -5.0f;
+			randomY = 5.0f;
+		}
+		if(direction == 7)
+		{
+			// à droite
+			randomX = -5.0f;
+			randomY = 5.0f;
+		}//*/
 
-		randomX = Random.Range(-15.0f,15.0f); // with float parameters, a random float
-		randomY = Random.Range(-15.0f,15.0f); //  between -2.0 and 2.0 is returned
-		
+		//randomX = 0.0f;
+		//randomY = -15.0f;
+		//randomX = Random.Range(-15.0f,15.0f); // with float parameters, a random float
+		//randomY = Random.Range(-15.0f,15.0f); //  between -2.0 and 2.0 is returned
+	
+
+		//transform.Translate( new Vector2(randomX,randomY) * speed * Time.deltaTime);
+		rigidbody2D.velocity = new Vector2(randomX,randomY) * 0.5f;
+
 		if (transform.position.x >= maxX || transform.position.x <= minX) {
 			randomX = -randomX;
 		}
 		if (transform.position.y >= maxY || transform.position.y <= minY) {
 			randomY = -randomY;
 		}
-
-		transform.Translate( new Vector3(randomX,randomY,0) * speed * Time.deltaTime);
 		
 		transform.position = new Vector2(Mathf.Clamp(transform.position.x, minX, maxX),
 									Mathf.Clamp(transform.position.y, minY, maxY));
@@ -71,7 +125,7 @@ public class IAEnemy : MonoBehaviour {
 	bool voitPlayer(){
 		bool res = false;
 		for(int j = 0; j < players.Length; j++){
-			if( Vector3.Distance(players[j].transform.position, transform.position) < 5 ){
+			if( Vector3.Distance(players[j].transform.position, transform.position) < 2 ){
 				res = true;
 				playerClose = players[j];
 			}
@@ -84,9 +138,9 @@ public class IAEnemy : MonoBehaviour {
 
 		i++;
 
-		Debug.Log("etat : " + etat);
-		if(etat == 1){
 
+		if(etat == 1){
+			Debug.Log("etat : " + etat);
 			if(i % 20 == 0){
 				changeDirection();
 					
@@ -108,6 +162,7 @@ public class IAEnemy : MonoBehaviour {
 
 
 			if(voitPlayer()){
+				Debug.Log("etat : " + etat);
 				Debug.Log("voit joueur");
 				etat = 2;
 			}
@@ -115,9 +170,17 @@ public class IAEnemy : MonoBehaviour {
 
 		if(etat == 2){
 
-			/*transform.Translate(-playerClose.transform.position.x + Random.Range(-4, 4) * Time.deltaTime * speed,
-			                    -playerClose.transform.position.y + Random.Range(-5, 5) * Time.deltaTime * speed,
+			transform.Translate(-playerClose.transform.position.x * Time.deltaTime ,
+			                    -playerClose.transform.position.y * Time.deltaTime ,
 			                    0);
+
+			if (transform.position.x >= maxX || transform.position.x <= minX) {
+				randomX = -randomX;
+			}
+			if (transform.position.y >= maxY || transform.position.y <= minY) {
+				randomY = -randomY;
+			}
+
 
 			if(!voitPlayer()){
 				etat = 1;
@@ -125,16 +188,16 @@ public class IAEnemy : MonoBehaviour {
 			Debug.Log("etat : " + etat);
 		}
 
-		/*if(etat == 3){
-			if( i % 15 == 0 ){
-				transform.Translate(Random.Range(-a,a) *  Time.deltaTime, Random.Range(-a,a) *  Time.deltaTime, 0);
+		if(etat == 3){
+			if( i % 20 == 0 ){
+				changeDirection();
 				
 			}
-			else{
+			/*else{
 				movingTo = new Vector3(transform.position.x + Random.Range(-a, a) * Time.deltaTime,
 				                       transform.position.y * Time.deltaTime + Random.Range(-a,a),
 				                       0);
-			}
+			}//*/
 
 			if(voitPlayer()){
 				etat = 2;
