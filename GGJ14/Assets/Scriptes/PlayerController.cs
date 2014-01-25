@@ -1,72 +1,48 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
-public class PlayerController : MonoBehaviour {
-	private Transform _transform;
-	private float _speed;
-	private float _fireRate;
-	private float _nextFire;
-
-	// Quand il sera fatigué ...
-	// public AudioClip fatigue;
-
-	private int _health;
-
-	public Transform _bullet;
+public class PlayerController : Players {
 
 	// Use this for initialization
-	void Start () {
-		_transform = transform;
-		_speed = 5f;
-		_fireRate = 0.3f;
-		_nextFire = 0f;
-
-		_health = 10;
+	public override void Start()
+	{
+		base.Start();
+		_horizontal = "Horizontal";
+		_vertical = "Vertical";
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	public override void Update ()
 	{
-		/*
-		Ray ray = Camera.mainCamera.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hit;
-		if(Physics.Raycast(ray, out hit))
-			_lookTarget = hit.point;
-		*/
+		base.Update();
 		Vector3 lookTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		lookTarget.z = 0;
 		_transform.localRotation = Utils.lookAt(_transform.position, lookTarget, Vector3.up);
-
 		if(Input.GetMouseButton(0))
 		{
-
 			if(Time.time > _nextFire)
 			{
 				_nextFire = Time.time + _fireRate;
-				Instantiate(_bullet, _transform.position, _transform.rotation);
+				Transform bullet = Instantiate(_bullet, _transform.position, _transform.rotation) as Transform;
+				bullet.parent = _transform;
 			}
 		}
 		// Quand il sera fatigué ...
-
 /*
 		if (_health < 25) {
 			audio.Play();
 		}
-
 */
 	}
 
-	void FixedUpdate()
+	public override void FixedUpdate()
 	{
-		float horizontalInput = Input.GetAxis("Horizontal");
-		float verticalInput = Input.GetAxis("Vertical");
-		rigidbody2D.velocity = new Vector2(_speed * horizontalInput, _speed * verticalInput);
+		base.FixedUpdate();
 	}
 
 	void OnGUI()
 	{
-		GUI.Box(new Rect(0, 0, Screen.width/6, Screen.height/4), "Player info");
+		GUI.Box(new Rect(0, 0, Screen.width/6, Screen.height/4), "Player 1");
 		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
 		GUI.Label(new Rect(20,60,80,20), "Speed : " + _speed);
 	}
