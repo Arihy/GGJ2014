@@ -8,27 +8,34 @@ public class Timer : MonoBehaviour {
 	private int _sec;
 	private bool actualize = false;
 	private float wait = 0.2f;
-	private GUIText _text;
+	public GUIText _text;
+
+
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (!actualize) {
+		//if (!actualize) {
 			StartCoroutine (Pause());			
-		}
+		//}
 	}
 
 	IEnumerator Pause() {
-		actualize = true;
-		yield return new WaitForSeconds (wait);
-		_myTimer--;
-		Convert ();
-		UpdateText ();
-		actualize = false;
+		if(_myTimer > 0){
+			//actualize = true;
+			yield return new WaitForSeconds (wait);
+			_myTimer--;
+			Convert ();
+			UpdateText ();
+			//actualize = false;
+		}
+		else{
+			Application.LoadLevel("ScoreLevel");
+		}
 	}
 
 	//Covert the Timer into minutes and seconds
@@ -39,24 +46,25 @@ public class Timer : MonoBehaviour {
 
 	//Création de text
 	void UpdateText(){
+
 		if (_sec <= 10) {
 			if (_min <= 10) {
-				_text.text = "0" + _min.ToString () + " : " + "0" + _sec.ToString ();
+				guiText.text = "0" + _min.ToString () + " : " + "0" + _sec.ToString ();
 			} 
 			else {
-				_text.text = _min.ToString () + " : " + "0" + _sec.ToString ();
+				guiText.text = _min.ToString () + " : " + "0" + _sec.ToString ();
 			}
 		} 
 		else{
 			if (_min <= 10) {
-				_text.text = "0" + _min.ToString () + " : " + _sec.ToString ();
+				guiText.text = "0" + _min.ToString () + " : " + _sec.ToString ();
 			} 
 			else{
-				_text.text = _min.ToString () + " : " + _sec.ToString ();
+				guiText.text = _min.ToString () + " : " + _sec.ToString ();
 			}
+		
+		
 		}
 	}
-
-
 
 }
