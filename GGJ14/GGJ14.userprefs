@@ -1,47 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\IAEnemy2.cs">
-    <Files>
-      <File FileName="Assets\Scriptes\IAEnemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\IAEnemy2.cs" Line="25" Column="29" />
-=======
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\Timer.cs">
-    <Files>
-      <File FileName="Assets\Scriptes\IAEnemy.cs" Line="102" Column="20" />
-      <File FileName="Assets\Scriptes\Bonus.cs" Line="18" Column="10" />
-      <File FileName="Assets\Scriptes\Utils.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\Timer.cs" Line="10" Column="26" />
-      <File FileName="..\..\SSF\SuperSoccerFighter\Assets\Scripts\Chrono.cs" Line="15" Column="15" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\chrono.cs">
-    <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\Scriptes\IAEnemy.cs" Line="96" Column="8" />
-      <File FileName="Assets\Scriptes\PlayerController.cs" Line="1" Column="1" />
-=======
-      <File FileName="Assets\Scriptes\PlayerController.cs" Line="25" Column="15" />
-<<<<<<< HEAD
-      <File FileName="Assets\Scriptes\Meurt.cs" Line="23" Column="17" />
-      <File FileName="Assets\Scriptes\chrono.cs" Line="20" Column="33" />
-=======
-      <File FileName="Assets\Scriptes\Meurt.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\chrono.cs" Line="21" Column="3" />
-=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\Bullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\PlayerController2.cs">
     <Files>
-      <File FileName="Assets\Scriptes\Players.cs" Line="45" Column="30" />
-      <File FileName="Assets\Scriptes\PlayerController.cs" Line="27" Column="32" />
-      <File FileName="Assets\Scriptes\PlayerController2.cs" Line="32" Column="2" />
-      <File FileName="Assets\Scriptes\Bullet.cs" Line="31" Column="1" />
->>>>>>> 5f08e07eccb0be1c172726aa9c21cf4b85d5ed0e
->>>>>>> d627b3339704b01b4929a1c7ddfa2940ece16309
->>>>>>> 4fbfd633ff11c3d6268dfb98d7df6b3acc56c29f
->>>>>>> 768a376ea2568378da95c60c55594103d530ab89
->>>>>>> 33478abbed6e831fb57c35d819b1a39b6a54d751
+      <File FileName="Assets\Scriptes\Players.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scriptes\PlayerController2.cs" Line="46" Column="1" />
+      <File FileName="Assets\Scriptes\PlayerController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
