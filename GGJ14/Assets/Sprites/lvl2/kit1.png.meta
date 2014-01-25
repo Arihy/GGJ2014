@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 2dd8b0355c69e24429cc9d4b803d505f
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: kit1_0
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1053
+        width: 1089
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: kit1_1
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1008
+        width: 814
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: kit1_2
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 970
+        width: 812
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: kit1_3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 919
+        width: 275
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: kit1_4
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 929
+        width: 284
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: kit1_5
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 680
+        width: 20
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: kit1_6
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 884
+        width: 91
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: kit1_7
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 927
+        width: 228
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: kit1_8
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 676
+        width: 17
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: kit1_9
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 652
+        width: 21
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

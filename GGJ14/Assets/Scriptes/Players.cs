@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Players : MonoBehaviour {
 	protected Transform _transform;
 	protected float _speed;
 	protected float _fireRate;
 	protected float _nextFire;
+	protected List<Bonus> _bag;
 
 	protected int _health;
 	
@@ -44,5 +46,9 @@ public class Players : MonoBehaviour {
 			_health -= 10;
 			Destroy(other.gameObject);
 		}
+	}
+
+	void AddBonus(Bonus B){
+		_bag.Add (B);
 	}
 }

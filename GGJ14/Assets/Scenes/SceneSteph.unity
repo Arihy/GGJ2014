@@ -2676,6 +2676,22 @@ AudioSource:
     m_Curve:
     - time: 0
       value: 1
+<<<<<<< HEAD
+      objectReference: {fileID: 0}
+    - target: {fileID: 400064, guid: dfef72e565a6b054288625f4167b9216, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 400064, guid: dfef72e565a6b054288625f4167b9216, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dfef72e565a6b054288625f4167b9216, type: 2}
+  m_RootGameObject: {fileID: 885448663}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+=======
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2691,6 +2707,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+>>>>>>> 768a376ea2568378da95c60c55594103d530ab89
 --- !u!1 &901004606
 GameObject:
   m_ObjectHideFlags: 0
