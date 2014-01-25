@@ -16,8 +16,8 @@ public class IAEnemy : MonoBehaviour {
 		etat = 1;
 		players = GameObject.FindGameObjectsWithTag("Player");
 		a = 100;
-		movingTo = new Vector3(transform.position.x + Random.Range(-a, a) * speed,
-		                       transform.position.y + Random.Range(-a, a) * speed,
+		movingTo = new Vector3(transform.position.x + Random.Range(-1, 1) * speed,
+		                       transform.position.y + Random.Range(-1, 1) * speed,
 		                       0);//*/
 
 
@@ -47,7 +47,9 @@ public class IAEnemy : MonoBehaviour {
 		Debug.Log("etat : " + etat);
 		if(etat == 1){
 			if( i % 15 == 0 ){
-				transform.Translate(Random.Range(-a,a) *  Time.deltaTime, Random.Range(-a,a) *  Time.deltaTime, 0);
+				transform.Translate(transform.position.x + Random.Range(-a,a) *  Time.deltaTime,
+				                    transform.position.x + Random.Range(-a,a) *  Time.deltaTime,
+				                    0);
 
 			}
 			else{
