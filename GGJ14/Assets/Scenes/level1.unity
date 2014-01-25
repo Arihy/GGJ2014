@@ -794,11 +794,11 @@ Prefab:
     - target: {fileID: 11400000, guid: 61ba19638d42400439bb561604d41ecb, type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 482033444}
+      objectReference: {fileID: 204970830}
     - target: {fileID: 11400002, guid: 61ba19638d42400439bb561604d41ecb, type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 204970830}
+      objectReference: {fileID: 482033444}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 61ba19638d42400439bb561604d41ecb, type: 2}
   m_RootGameObject: {fileID: 1815537728}
@@ -1126,7 +1126,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: eda968bec9e029842b2ce2836d32234b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: eda968bec9e029842b2ce2836d32234b, type: 2}
   m_RootGameObject: {fileID: 1931432018}
   m_IsPrefabParent: 0
@@ -1265,7 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c03f2100abfe146bd8a1cf646b24bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 204970830}
+  player: {fileID: 482033444}
 --- !u!81 &317409815
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4675,7 +4676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c03f2100abfe146bd8a1cf646b24bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 482033444}
+  player: {fileID: 204970830}
 --- !u!81 &1580649517
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5879,9 +5880,8 @@ GameObject:
 --- !u!114 &1931432019
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: eda968bec9e029842b2ce2836d32234b,
-    type: 2}
-  m_PrefabInternal: {fileID: 264846886}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1931432018}
   m_Enabled: 1
   m_EditorHideFlags: 0
