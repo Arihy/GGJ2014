@@ -27,4 +27,9 @@ public class Bullet : MonoBehaviour {
 	void FixedUpdate()
 	{
 	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		Destroy(gameObject);
+	}
 }
