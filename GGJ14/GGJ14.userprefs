@@ -1,9 +1,18 @@
 ﻿<Properties>
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\CameraScript.cs">
+    <Files>
+      <File FileName="Assets\Scriptes\Chrono.cs" Line="86" Column="30" />
+      <File FileName="Assets\Scriptes\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scriptes\CameraScript.cs" Line="17" Column="89" />
+=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\PlayerController2.cs">
     <Files>
       <File FileName="Assets\Scriptes\PlayerController2.cs" Line="22" Column="29" />
       <File FileName="Assets\Scriptes\Bullet.cs" Line="17" Column="16" />
+>>>>>>> 98436e9e4d29ea6d6e566a784559e8a39a66885d
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
