@@ -2,7 +2,8 @@ fileFormatVersion: 2
 guid: d9cac63e6368ed844bbb0d0dddbaf412
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - FinTemps: {fileID: 8300000, guid: 24aa131fe9dfadf49bba6fa6d71f5690, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
