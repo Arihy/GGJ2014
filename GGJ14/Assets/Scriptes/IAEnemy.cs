@@ -5,14 +5,22 @@ public class IAEnemy : MonoBehaviour {
 
 	int i;
 	int etat;
-	Transform movingTo;
+	Vector3 movingTo;
 	GameObject[] players;
 	GameObject playerClose;
-
+	int a;
+	int speed;
 	void Awake(){
+		speed = 3;
 		i = 0;
 		etat = 1;
 		players = GameObject.FindGameObjectsWithTag("Player");
+		a = 5;
+		movingTo = new Vector3((transform.position.x + Random.Range(-1, 1) * speed),
+		                       transform.position.y + Random.Range(-1, 1) * speed,
+		                       0);//*/
+
+
 	}
 
 	// Use this for initialization
@@ -23,20 +31,34 @@ public class IAEnemy : MonoBehaviour {
 	bool voitPlayer(){
 		bool res = false;
 		for(int j = 0; j < players.Length; j++){
-			if( Vector3.Distance(players[j].transform.position, transform.position) < 10 ){
+			if( Vector3.Distance(players[j].transform.position, transform.position) < 5 ){
 				res = true;
 				playerClose = players[j];
 			}
 		}
 		return res;
 	}
-	
-	// Update is called once per frame
+
+		// Update is called once per frame
 	void Update () {
+
+		i++;
+
+		Debug.Log("etat : " + etat);
 		if(etat == 1){
-			if( i % 500 == 0 ){
-				transform.Translate(Random.Range(-11,0) *  Time.deltaTime, Random.Range(-11,0) *  Time.deltaTime, 0);
+			if( i % 15 == 0 ){
+				transform.Translate(transform.position.x + Random.Range(-a,a) *  Time.deltaTime,
+				                    transform.position.x + Random.Range(-a,a) *  Time.deltaTime,
+				                    0);
+
 			}
+			else{
+			 movingTo = new Vector3(transform.position.x + Random.Range(-a, a) * Time.deltaTime,
+				                    transform.position.y * Time.deltaTime + Random.Range(-a,a),
+				                    0);
+			}
+
+
 			if(voitPlayer()){
 				Debug.Log("voit joueur");
 				etat = 2;
@@ -44,11 +66,48 @@ public class IAEnemy : MonoBehaviour {
 		}
 
 		if(etat == 2){
-			transform.Translate(playerClose.transform.position.x, playerClose.transform.position.y, 0);
+
+			transform.Translate(-playerClose.transform.position.x + Random.Range(-4, 4) * Time.deltaTime * speed,
+			                    -playerClose.transform.position.y + Random.Range(-5, 5) * Time.deltaTime * speed,
+			                    0);
+
+			if(!voitPlayer()){
+				etat = 1;
+			}
+			Debug.Log("etat : " + etat);
 		}
 
 		if(etat == 3){
+			if( i % 15 == 0 ){
+				transform.Translate(Random.Range(-a,a) *  Time.deltaTime, Random.Range(-a,a) *  Time.deltaTime, 0);
+				
+			}
+			else{
+				movingTo = new Vector3(transform.position.x + Random.Range(-a, a) * Time.deltaTime,
+				                       transform.position.y * Time.deltaTime + Random.Range(-a,a),
+				                       0);
+			}
 
-		}
+			if(voitPlayer()){
+				etat = 2;
+			}
+		}//*/
+
+
+
 	}
-}
+
+	void OnTriggerEnter(Collider other) {
+		if(other.CompareTag("Bullet")){
+			//if(etat == 2){
+				etat = 3;
+				other.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+			//}
+			//else if(etat == 3){
+			//	SpriteRenderer.color = "green";
+			//}
+		}
+	}//*/
+}	
+
+
