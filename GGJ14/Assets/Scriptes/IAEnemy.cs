@@ -15,9 +15,9 @@ public class IAEnemy : MonoBehaviour {
 		i = 0;
 		etat = 1;
 		players = GameObject.FindGameObjectsWithTag("Player");
-		a = 5;
-		movingTo = new Vector3((transform.position.x + Random.Range(-1, 1) * speed),
-		                       transform.position.y + Random.Range(-1, 1) * speed,
+		a = 25;
+		movingTo = new Vector3((transform.position.x + Random.Range(-1, 1)) * speed,
+		                       (transform.position.y + Random.Range(-1, 1)) * speed,
 		                       0);//*/
 
 
@@ -47,16 +47,16 @@ public class IAEnemy : MonoBehaviour {
 		Debug.Log("etat : " + etat);
 		if(etat == 1){
 			if( i % 15 == 0 ){
-				transform.Translate(transform.position.x + Random.Range(-a,a) *  Time.deltaTime,
-				                    transform.position.x + Random.Range(-a,a) *  Time.deltaTime,
+				transform.Translate((transform.position.x + Random.Range(-a,a)) *  Time.deltaTime * speed,
+				                    (transform.position.x + Random.Range(-a,a)) *  Time.deltaTime * speed,
 				                    0);
 
 			}
-			else{
+			/*else{
 			 movingTo = new Vector3(transform.position.x + Random.Range(-a, a) * Time.deltaTime,
 				                    transform.position.y * Time.deltaTime + Random.Range(-a,a),
 				                    0);
-			}
+			}*/
 
 
 			if(voitPlayer()){
@@ -91,6 +91,9 @@ public class IAEnemy : MonoBehaviour {
 			if(voitPlayer()){
 				etat = 2;
 			}
+			else{
+				etat = 1;
+			}
 		}//*/
 
 
@@ -99,13 +102,11 @@ public class IAEnemy : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if(other.CompareTag("Bullet")){
-			//if(etat == 2){
-				etat = 3;
-				other.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-			//}
-			//else if(etat == 3){
-			//	SpriteRenderer.color = "green";
-			//}
+
+			etat = 3;
+			gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+			//other.gameObject.GetComponent<SpriteRenderer>().color = 
+
 		}
 	}//*/
 }	
