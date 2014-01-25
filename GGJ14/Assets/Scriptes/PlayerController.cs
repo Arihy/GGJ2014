@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
 	private float _fireRate;
 	private float _nextFire;
 
+	// Quand il sera fatigué ...
+	// public AudioClip fatigue;
 
 	private int _health;
 
@@ -20,7 +22,7 @@ public class PlayerController : MonoBehaviour {
 		_fireRate = 0.3f;
 		_nextFire = 0f;
 
-		_health = 100;
+		_health = 10;
 	}
 	
 	// Update is called once per frame
@@ -45,6 +47,14 @@ public class PlayerController : MonoBehaviour {
 				Instantiate(_bullet, _transform.position, _transform.rotation);
 			}
 		}
+		// Quand il sera fatigué ...
+
+/*
+		if (_health < 25) {
+			audio.Play();
+		}
+
+*/
 	}
 
 	void FixedUpdate()
@@ -60,4 +70,5 @@ public class PlayerController : MonoBehaviour {
 		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
 		GUI.Label(new Rect(20,60,80,20), "Speed : " + _speed);
 	}
+	
 }
