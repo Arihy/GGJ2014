@@ -4,12 +4,17 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 	private Transform _transform;
 	private float _speed;
+	private float _fireRate;
+	private float _nextFire;
+
 	public Transform _bullet;
 
 	// Use this for initialization
 	void Start () {
 		_transform = transform;
 		_speed = 5f;
+		_fireRate = 0.3f;
+		_nextFire = 0f;
 	}
 	
 	// Update is called once per frame
@@ -20,19 +25,18 @@ public class PlayerController : MonoBehaviour {
 		RaycastHit hit;
 		if(Physics.Raycast(ray, out hit))
 			_lookTarget = hit.point;
-			*/
+		*/
 		Vector3 lookTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		lookTarget.z = 0;
 		_transform.localRotation = Utils.lookAt(_transform.position, lookTarget, Vector3.up);
-		Debug.Log("position mouse " + Camera.main.ScreenToWorldPoint(Input.mousePosition));
 
 		if(Input.GetMouseButton(0))
 		{
-			//if(Time.time > nextFire)
-			//{
-				//nextFire = Time.time + fireRate;
-			Instantiate(_bullet, _transform.position, _transform.rotation);
-			//}
+			if(Time.time > _nextFire)
+			{
+				_nextFire = Time.time + _fireRate;
+				Instantiate(_bullet, _transform.position, _transform.rotation);
+			}
 		}
 	}
 
