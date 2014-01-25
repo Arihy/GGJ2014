@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class PlayerController : MonoBehaviour {
 	private Transform _transform;
 	private float _speed;
 	private float _fireRate;
 	private float _nextFire;
+
 
 	private int _health;
 
@@ -36,6 +38,7 @@ public class PlayerController : MonoBehaviour {
 
 		if(Input.GetMouseButton(0))
 		{
+
 			if(Time.time > _nextFire)
 			{
 				_nextFire = Time.time + _fireRate;
