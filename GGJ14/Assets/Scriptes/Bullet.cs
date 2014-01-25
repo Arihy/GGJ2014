@@ -7,6 +7,9 @@ public class Bullet : MonoBehaviour {
 	private float _timeToDie;
 	private float _nextTime;
 
+	/*
+	public AudioClip Impact;
+*/
 	// Use this for initialization
 	void Start()
 	{
@@ -20,9 +23,15 @@ public class Bullet : MonoBehaviour {
 	void Update()
 	{
 		_transform.Translate(0 , _speed * Time.deltaTime, 0);
+
+		if (_timeToDie == 0) {
+				audio.Play();
+		}
+/*
 		if(Time.time > _timeToDie + _nextTime)
 			Destroy(gameObject);
 	}
+	*/
 
 	void FixedUpdate()
 	{
