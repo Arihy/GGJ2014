@@ -2,43 +2,20 @@
 using System.Collections;
 
 
-public class PlayerController : MonoBehaviour {
-	private Transform _transform;
-	private float _speed;
-	private float _fireRate;
-	private float _nextFire;
-
-
-	private int _health;
-
-	public Transform _bullet;
+public class PlayerController : Players {
 
 	// Use this for initialization
-	void Start () {
-		_transform = transform;
-		_speed = 5f;
-		_fireRate = 0.3f;
-		_nextFire = 0f;
-
-		_health = 100;
+	public override void Start()
+	{
+		base.Start();
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	public override void Update ()
 	{
-		/*
-		Ray ray = Camera.mainCamera.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hit;
-		if(Physics.Raycast(ray, out hit))
-			_lookTarget = hit.point;
-		*/
-		Vector3 lookTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		lookTarget.z = 0;
-		_transform.localRotation = Utils.lookAt(_transform.position, lookTarget, Vector3.up);
-
+		base.Update();
 		if(Input.GetMouseButton(0))
 		{
-
 			if(Time.time > _nextFire)
 			{
 				_nextFire = Time.time + _fireRate;
