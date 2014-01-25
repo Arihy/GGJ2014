@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour {
 	{
 		_transform = transform;
 		_speed = 20f;
-		_timeToDie = 1.5f;
+		_timeToDie = 0.5f;
 		_nextTime = Time.time;
 	}
 	
