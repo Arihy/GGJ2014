@@ -163,7 +163,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1606357783}
   - 212: {fileID: 1606357782}
-  - 61: {fileID: 1606357780}
+  - 54: {fileID: 1606357781}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -171,17 +171,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1606357780
-BoxCollider2D:
+--- !u!54 &1606357781
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1606357779}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1.27999997, y: 1.27999997}
-  m_Center: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!212 &1606357782
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -212,7 +216,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1606357779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.66975868, y: .0159025192, z: 0}
+  m_LocalPosition: {x: 1.68565834, y: .0159024894, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -225,8 +229,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2000310941}
   - 212: {fileID: 2000310940}
+  - 54: {fileID: 2000310939}
   - 114: {fileID: 2000310938}
-  - 61: {fileID: 2000310939}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -245,17 +249,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf9d6a6fd0a7984c827a9619cf2047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &2000310939
-BoxCollider2D:
+--- !u!54 &2000310939
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2000310937}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1.27999997, y: 1.27999997}
-  m_Center: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!212 &2000310940
 SpriteRenderer:
   m_ObjectHideFlags: 0
