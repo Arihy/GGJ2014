@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
 public class PlayerController : Players {
 
 	// Use this for initialization
@@ -27,6 +26,12 @@ public class PlayerController : Players {
 				Instantiate(_bullet, _transform.position, _transform.rotation);
 			}
 		}
+		// Quand il sera fatigué ...
+/*
+		if (_health < 25) {
+			audio.Play();
+		}
+*/
 	}
 
 	public override void FixedUpdate()
@@ -40,4 +45,5 @@ public class PlayerController : Players {
 		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
 		GUI.Label(new Rect(20,60,80,20), "Speed : " + _speed);
 	}
+	
 }
