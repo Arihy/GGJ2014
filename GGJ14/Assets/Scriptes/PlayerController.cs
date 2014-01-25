@@ -8,12 +8,17 @@ public class PlayerController : Players {
 	public override void Start()
 	{
 		base.Start();
+		_horizontal = "Horizontal";
+		_vertical = "Vertical";
 	}
 	
 	// Update is called once per frame
 	public override void Update ()
 	{
 		base.Update();
+		Vector3 lookTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		lookTarget.z = 0;
+		_transform.localRotation = Utils.lookAt(_transform.position, lookTarget, Vector3.up);
 		if(Input.GetMouseButton(0))
 		{
 			if(Time.time > _nextFire)
@@ -24,16 +29,14 @@ public class PlayerController : Players {
 		}
 	}
 
-	void FixedUpdate()
+	public override void FixedUpdate()
 	{
-		float horizontalInput = Input.GetAxis("Horizontal");
-		float verticalInput = Input.GetAxis("Vertical");
-		rigidbody2D.velocity = new Vector2(_speed * horizontalInput, _speed * verticalInput);
+		base.FixedUpdate();
 	}
 
 	void OnGUI()
 	{
-		GUI.Box(new Rect(0, 0, Screen.width/6, Screen.height/4), "Player info");
+		GUI.Box(new Rect(0, 0, Screen.width/6, Screen.height/4), "Player 1");
 		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
 		GUI.Label(new Rect(20,60,80,20), "Speed : " + _speed);
 	}

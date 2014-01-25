@@ -6,11 +6,14 @@ public class Players : MonoBehaviour {
 	protected float _speed;
 	protected float _fireRate;
 	protected float _nextFire;
-	
-	
+
 	protected int _health;
 	
 	public Transform _bullet;
+
+	//config controller
+	protected string _horizontal;
+	protected string _vertical;
 
 	// Use this for initialization
 	public virtual void Start () {
@@ -24,8 +27,13 @@ public class Players : MonoBehaviour {
 	
 	// Update is called once per frame
 	public virtual void Update () {
-		Vector3 lookTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		lookTarget.z = 0;
-		_transform.localRotation = Utils.lookAt(_transform.position, lookTarget, Vector3.up);
+
+	}
+
+	public virtual void FixedUpdate()
+	{
+		float horizontalInput = Input.GetAxis(_horizontal);
+		float verticalInput = Input.GetAxis(_vertical);
+		rigidbody2D.velocity = new Vector2(_speed * horizontalInput, _speed * verticalInput);
 	}
 }
