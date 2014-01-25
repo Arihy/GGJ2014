@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f7edd6c870b9794084097978cfcf175
+guid: 490fb2b4dcb507e4a99495a6c01f0823
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -45,13 +45,13 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: persos2_0
+    - name: terre4_0
       rect:
         serializedVersion: 2
-        x: 310
-        y: 236
-        width: 93
-        height: 120
+        x: 268
+        y: 451
+        width: 316
+        height: 398
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 

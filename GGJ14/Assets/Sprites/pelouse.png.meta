@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f7edd6c870b9794084097978cfcf175
+guid: 07ab907aa3d02604288be2335c3fa6d2
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -45,13 +45,13 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: persos2_0
+    - name: pelouse_0
       rect:
         serializedVersion: 2
-        x: 310
-        y: 236
-        width: 93
-        height: 120
+        x: 0
+        y: 0
+        width: 567
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
