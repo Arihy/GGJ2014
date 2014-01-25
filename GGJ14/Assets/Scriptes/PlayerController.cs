@@ -23,7 +23,8 @@ public class PlayerController : Players {
 			if(Time.time > _nextFire)
 			{
 				_nextFire = Time.time + _fireRate;
-				Instantiate(_bullet, _transform.position, _transform.rotation);
+				Transform bullet = Instantiate(_bullet, _transform.position, _transform.rotation) as Transform;
+				bullet.parent = _transform;
 			}
 		}
 		// Quand il sera fatigué ...

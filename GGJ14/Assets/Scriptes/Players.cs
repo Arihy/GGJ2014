@@ -36,4 +36,13 @@ public class Players : MonoBehaviour {
 		float verticalInput = Input.GetAxis(_vertical);
 		rigidbody2D.velocity = new Vector2(_speed * horizontalInput, _speed * verticalInput);
 	}
+
+	public virtual void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.gameObject.CompareTag("Bullet") && other.gameObject.transform.parent != this.gameObject)
+		{
+			_health -= 10;
+			Destroy(other.gameObject);
+		}
+	}
 }

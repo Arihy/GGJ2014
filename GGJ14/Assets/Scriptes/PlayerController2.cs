@@ -22,12 +22,12 @@ public class PlayerController2 : Players {
 			if(Time.time > _nextFire)
 			{
 				_nextFire = Time.time + _fireRate;
-				Instantiate(_bullet, _transform.position, _transform.rotation);
+				Transform bullet = Instantiate(_bullet, _transform.position, _transform.rotation) as Transform;
+				bullet.parent = _transform;
 			}
 		}
 		float rotate = Input.GetAxis("R_XAxis_1");
 		_transform.Rotate(new Vector3(0, 0, -_rotationSpeed * rotate * Time.deltaTime));
-		Debug.Log("touche"+ Input.GetAxis("R_XAxis_1"));
 	}
 	
 	public override void FixedUpdate()
