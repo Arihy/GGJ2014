@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
 	private Transform _transform;
 	private float _speed;
 	private float _fireRate;
 	private float _nextFire;
+	private List<Bonus> _bag;
 
 	private int _health;
 
@@ -56,5 +58,9 @@ public class PlayerController : MonoBehaviour {
 		GUI.Box(new Rect(0, 0, Screen.width/6, Screen.height/4), "Player info");
 		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
 		GUI.Label(new Rect(20,60,80,20), "Speed : " + _speed);
+	}
+
+	void AddBonus(Bonus B){
+		_bag.Add (B);
 	}
 }

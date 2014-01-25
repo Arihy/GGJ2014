@@ -2170,6 +2170,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400064, guid: dfef72e565a6b054288625f4167b9216, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 400064, guid: dfef72e565a6b054288625f4167b9216, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfef72e565a6b054288625f4167b9216, type: 2}
   m_RootGameObject: {fileID: 885448663}
