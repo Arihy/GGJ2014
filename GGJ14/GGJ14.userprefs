@@ -1,8 +1,15 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\IAEnemy.cs">
     <Files>
       <File FileName="Assets\Scriptes\IAEnemy.cs" Line="68" Column="78" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\IAEnemy.cs">
+    <Files>
+      <File FileName="Assets\Scriptes\IAEnemy.cs" Line="59" Column="5" />
+>>>>>>> 5581f7f4bd87773082cd505ebddbbdc7781fc3d5
       <File FileName="Assets\Scriptes\Bullet.cs" Line="1" Column="1" />
       <File FileName="Assets\Scriptes\Utils.cs" Line="1" Column="1" />
     </Files>
