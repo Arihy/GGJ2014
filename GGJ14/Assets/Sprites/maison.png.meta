@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f7edd6c870b9794084097978cfcf175
+guid: b88784b05313a7e438b1ef4d35508cdf
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -45,13 +45,13 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: persos2_0
+    - name: maison_0
       rect:
         serializedVersion: 2
-        x: 310
-        y: 236
-        width: 93
-        height: 120
+        x: 125
+        y: 181
+        width: 124
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 

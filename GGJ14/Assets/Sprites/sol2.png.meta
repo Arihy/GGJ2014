@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f7edd6c870b9794084097978cfcf175
+guid: 9bb6c1848592d924691fd2983567bc3f
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -45,13 +45,49 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: persos2_0
+    - name: sol2_0
       rect:
         serializedVersion: 2
-        x: 310
-        y: 236
-        width: 93
-        height: 120
+        x: 205
+        y: 351
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sol2_1
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 304
+        width: 139
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sol2_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 176
+        width: 187
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sol2_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 241
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: sol2_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 135
+        width: 130
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
