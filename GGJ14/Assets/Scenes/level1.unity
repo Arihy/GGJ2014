@@ -477,9 +477,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 72459541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10235bda31a6b974fb7232f529de7b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 19c7fd4d78b758f479adfbce8c428005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gScoreJ2: {fileID: 0}
+  gScoreJ1: {fileID: 0}
+  gNbBotJ2: {fileID: 0}
+  gNbBotJ1: {fileID: 0}
 --- !u!4 &72459543
 Transform:
   m_ObjectHideFlags: 0
@@ -9251,6 +9255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80540b13b7091f499819ecafe146709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chronoInitiale: 150
+  textChrono: {fileID: 1931432020}
 --- !u!132 &1931432020
 GUIText:
   m_ObjectHideFlags: 0

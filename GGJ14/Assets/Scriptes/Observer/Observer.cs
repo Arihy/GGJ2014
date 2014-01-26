@@ -2,6 +2,10 @@
 using System.Collections;
 
 public class Observer : MonoBehaviour, IMessageListener {
+    public GUIText gScoreJ2;
+    public GUIText gScoreJ1;
+    public GUIText gNbBotJ2;
+    public GUIText gNbBotJ1;
     public static int scoreJ1;
     public static int scoreJ2;
     public static int nbBotJ1;
@@ -16,7 +20,11 @@ public class Observer : MonoBehaviour, IMessageListener {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        gScoreJ2.text = "" + scoreJ2;
+        gScoreJ1.text = "" + scoreJ1;
+
+        gNbBotJ2.text = "Bots: " + nbBotJ2;
+        gNbBotJ1.text = "Bots: " + nbBotJ1;
 	}
 
     public void OnMessage(eMessageID _messageID, GameObject _sender)
