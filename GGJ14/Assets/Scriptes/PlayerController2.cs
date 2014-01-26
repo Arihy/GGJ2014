@@ -38,8 +38,10 @@ public class PlayerController2 : Players {
 	
 	void OnGUI()
 	{
-		GUI.Box(new Rect(Screen.width/2, 0, Screen.width/6, Screen.height/4), "Player 2");
-		GUI.Label(new Rect(Screen.width/2 + 20,40,80,20), "Health : " + _health);
-		GUI.Label(new Rect(Screen.width/2 + 20,60,80,20), "Speed : " + _speed);
+
+		GUI.color = Color.cyan;
+		GUI.Box(new Rect(0, 0, 120, 100), "Player 2");
+		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
+		GUI.Label(new Rect(20,60,80,20), "Speed : " + _speed);//*/
 	}
 }
