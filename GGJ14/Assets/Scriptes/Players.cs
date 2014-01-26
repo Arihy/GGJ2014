@@ -19,6 +19,9 @@ public class Players : MonoBehaviour {
 
     protected int _team;
 
+
+	public Transform particule;
+
 	// Use this for initialization
 	public virtual void Start () {
 		_transform = transform;
@@ -50,6 +53,7 @@ public class Players : MonoBehaviour {
 		if(other.gameObject.CompareTag("Bullet") && other.gameObject.transform.parent != this.gameObject)
 		{
 			_health -= 10;
+			Instantiate(particule,this.transform.position, this.transform.rotation);
 			Destroy(other.gameObject);
 		}
 	}
