@@ -27,13 +27,14 @@ public class Menu : MonoBehaviour {
 		if( this.name == "Play") 
 		{
 			Debug.Log ("play");
-			cam.transform.Translate(40,0,0);
+			Application.LoadLevel("level1");
+			//cam.transform.Translate(40,0,0);
 		}
 
 		if( this.name == "PlayWB") 
 		{
 			Debug.Log ("play");
-			Application.LoadLevel("");
+			cam.transform.Translate(40,0,0);
 		}
 
 		if( this.name == "Help") 
@@ -62,14 +63,14 @@ public class Menu : MonoBehaviour {
 		if( this.name == "city") 
 		{
 			Debug.Log ("return");
-			Application.LoadLevel("level1");
-			cam.transform.Translate(40,0,0);
+			Application.LoadLevel("SceneMell");
+			//cam.transform.Translate(40,0,0);
 		}
 		if( this.name == "house") 
 		{
 			Debug.Log ("return");
-			Application.LoadLevel("");
-			cam.transform.Translate(40,0,0);
+			Application.LoadLevel("SceneSteph2");
+			//cam.transform.Translate(40,0,0);
 		}
 
 

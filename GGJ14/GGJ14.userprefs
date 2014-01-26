@@ -1,43 +1,11 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench />
-=======
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\PlayerController2.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\Menu.cs">
     <Files>
-      <File FileName="Assets\Scriptes\IAEnemy2.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\PlayerController.cs" Line="8" Column="29" />
-      <File FileName="Assets\Scriptes\PlayerController2.cs" Line="6" Column="29" />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\CameraScript.cs">
-    <Files>
-      <File FileName="Assets\Scriptes\CameraScript.cs" Line="1" Column="1" />
-<<<<<<< HEAD
-=======
-      <File FileName="Assets\Scriptes\chrono.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\Converti.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\IAEnemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\Meurt.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\MoveCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\Menu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\pause.cs" Line="48" Column="3" />
-      <File FileName="Assets\Scriptes\Pause2.cs" Line="13" Column="3" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\PlayerController2.cs">
-    <Files>
-      <File FileName="Assets\Scriptes\IAEnemy2.cs" Line="212" Column="1" />
-      <File FileName="Assets\Scriptes\PlayerController.cs" Line="47" Column="26" />
-      <File FileName="Assets\Scriptes\PlayerController2.cs" Line="43" Column="46" />
->>>>>>> 42ba32f4bb897a44747be8dd910dc8990bdf11af
->>>>>>> 110c8dfa034c3612eeebe937ca0ee2ff8ef83049
->>>>>>> d0c66de1a28e5e59767353b28211cfb40f142c26
+      <File FileName="Assets\Scriptes\IAEnemy2.cs" Line="97" Column="21" />
+      <File FileName="Assets\Scriptes\Menu.cs" Line="70" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
->>>>>>> 37ffb163c6467e6bd6045c05e2ea99683c5d0976
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
