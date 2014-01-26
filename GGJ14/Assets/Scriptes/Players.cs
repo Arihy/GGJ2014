@@ -17,6 +17,8 @@ public class Players : MonoBehaviour {
 	protected string _horizontal;
 	protected string _vertical;
 
+    protected int _team;
+
 	// Use this for initialization
 	public virtual void Start () {
 		_transform = transform;
@@ -55,4 +57,9 @@ public class Players : MonoBehaviour {
 	void AddBonus(Bonus B){
 		_bag.Add (B);
 	}
+
+    public int getTeam()
+    {
+        return _team;
+    }
 }

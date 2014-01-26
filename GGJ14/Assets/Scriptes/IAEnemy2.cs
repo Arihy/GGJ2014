@@ -20,6 +20,9 @@ public class IAEnemy2 : MonoBehaviour {
 	float randomX;
 	float randomY;
 
+    private bool _inTeam;
+    private int _team;
+
 	void Awake(){
 		pathPoint[0] = transform;	
 		speed = 3.0f;
@@ -32,6 +35,9 @@ public class IAEnemy2 : MonoBehaviour {
 		minX = -17.14744f;
 		maxY = 18.98134f;
 		minY = -11.89067f;
+
+        _inTeam = false;
+        _team = 0;
 	}
 
 	// Use this for initialization
@@ -205,7 +211,51 @@ public class IAEnemy2 : MonoBehaviour {
 			gameObject.GetComponent<SpriteRenderer>().sprite = other.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite;
 			//other.gameObject.GetComponent<SpriteRenderer>().color = 
 			//Debug.Log(other.transform.parent.gameObject.name);
-			
+
+            int newTeam = other.transform.parent.gameObject.GetComponent<Players>().getTeam();
+            if(_inTeam)
+            {
+                if(_team != newTeam)
+                {
+                    //envoye d'un message de type ...
+                    if (newTeam == 1)
+                    {
+                        //score du joueur 1 ++
+                        MessageMgr.Instance.NotifyObservers(eMessageID.eScoreJ1, this.gameObject);
+                        //nb de bot capturé par joueur 1 ++
+                        MessageMgr.Instance.NotifyObservers(eMessageID.ePlusBotJ1, this.gameObject);
+                        //nb de bot capturé par joueur 2 --
+                        MessageMgr.Instance.NotifyObservers(eMessageID.eMoinsBotJ2, this.gameObject);
+                    }
+                    else
+                    {
+                        MessageMgr.Instance.NotifyObservers(eMessageID.eScoreJ2, this.gameObject);
+                        MessageMgr.Instance.NotifyObservers(eMessageID.ePlusBotJ2, this.gameObject);
+                        MessageMgr.Instance.NotifyObservers(eMessageID.eMoinsBotJ1, this.gameObject);
+                    }
+
+                    _team = newTeam;
+                }
+            }
+            else
+            {
+                //envoye d'un message de type ...
+                if (newTeam == 1)
+                {
+                    //score du joueur 1 ++
+                    MessageMgr.Instance.NotifyObservers(eMessageID.eScoreJ1, this.gameObject);
+                    //nb de bot capturé par joueur 1 ++
+                    MessageMgr.Instance.NotifyObservers(eMessageID.ePlusBotJ1, this.gameObject);
+                }
+                else
+                {
+                    MessageMgr.Instance.NotifyObservers(eMessageID.eScoreJ2, this.gameObject);
+                    MessageMgr.Instance.NotifyObservers(eMessageID.ePlusBotJ2, this.gameObject);
+                }
+
+                _team = newTeam;
+                _inTeam = true;
+            }
 		}
 	}//*/
 }
