@@ -212,7 +212,7 @@ public class IAEnemy2 : MonoBehaviour {
 			//other.gameObject.GetComponent<SpriteRenderer>().color = 
 			//Debug.Log(other.transform.parent.gameObject.name);
 
-            int newTeam = other.gameObject.GetComponent<Players>().getTeam();
+            int newTeam = other.transform.parent.gameObject.GetComponent<Players>().getTeam();
             if(_inTeam)
             {
                 if(_team != newTeam)
