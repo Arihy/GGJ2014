@@ -89,7 +89,7 @@ GameObject:
   - 114: {fileID: 12160175}
   m_Layer: 0
   m_Name: Bot2
-  m_TagString: Untagged
+  m_TagString: Bot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ Transform:
   m_GameObject: {fileID: 12160173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.04962254, y: -6.81690407, z: 0}
-  m_LocalScale: {x: .299057007, y: .299057007, z: .299057007}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 1609094133}
 --- !u!114 &12160175
@@ -1475,15 +1475,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.x
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.y
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.z
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_Name
@@ -1496,6 +1496,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
@@ -1651,7 +1655,7 @@ GameObject:
   - 114: {fileID: 295254564}
   m_Layer: 0
   m_Name: Bot5
-  m_TagString: Untagged
+  m_TagString: Bot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1664,7 +1668,7 @@ Transform:
   m_GameObject: {fileID: 295254562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.3252029, y: 3.04491138, z: 0}
-  m_LocalScale: {x: .299057007, y: .299057007, z: .299057007}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 1609094133}
 --- !u!114 &295254564
@@ -2241,15 +2245,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.x
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.y
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.z
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_Name
@@ -2258,6 +2262,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
@@ -3193,7 +3201,7 @@ GameObject:
   - 114: {fileID: 590031792}
   m_Layer: 0
   m_Name: Bot4
-  m_TagString: Untagged
+  m_TagString: Bot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3206,7 +3214,7 @@ Transform:
   m_GameObject: {fileID: 590031790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 19.7125111, y: -5.53958035, z: 0}
-  m_LocalScale: {x: .299057007, y: .299057007, z: .299057007}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 1609094133}
 --- !u!114 &590031792
@@ -3384,15 +3392,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.x
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.y
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.z
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_Name
@@ -3405,6 +3413,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
@@ -4825,7 +4837,7 @@ GameObject:
   - 114: {fileID: 1082322134}
   m_Layer: 0
   m_Name: Bot3
-  m_TagString: Untagged
+  m_TagString: Bot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4838,7 +4850,7 @@ Transform:
   m_GameObject: {fileID: 1082322132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.3841438, y: -13.7373905, z: 0}
-  m_LocalScale: {x: .299057007, y: .299057007, z: .299057007}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 1609094133}
 --- !u!114 &1082322134
@@ -6567,15 +6579,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.x
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.y
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.z
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_Name
@@ -6584,6 +6596,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
@@ -7184,7 +7200,7 @@ GameObject:
   - 114: {fileID: 1605626232}
   m_Layer: 0
   m_Name: Bot7
-  m_TagString: Untagged
+  m_TagString: Bot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7197,7 +7213,7 @@ Transform:
   m_GameObject: {fileID: 1605626230}
   m_LocalRotation: {x: 0, y: 0, z: .739800751, w: -.672826052}
   m_LocalPosition: {x: 6.26766968, y: -15.688056, z: 0}
-  m_LocalScale: {x: .299057007, y: .299057007, z: .299057007}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 1609094133}
 --- !u!114 &1605626232
@@ -7576,7 +7592,7 @@ GameObject:
   - 114: {fileID: 1726515386}
   m_Layer: 0
   m_Name: Bot6
-  m_TagString: Untagged
+  m_TagString: Bot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7589,7 +7605,7 @@ Transform:
   m_GameObject: {fileID: 1726515384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.71405029, y: -12.2891417, z: 0}
-  m_LocalScale: {x: .299057007, y: .299057007, z: .299057007}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 1609094133}
 --- !u!114 &1726515386
@@ -7997,7 +8013,7 @@ GameObject:
   - 114: {fileID: 1782308511}
   m_Layer: 0
   m_Name: Bot1
-  m_TagString: Untagged
+  m_TagString: Bot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8010,7 +8026,7 @@ Transform:
   m_GameObject: {fileID: 1782308508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.43736553, y: 3.29078007, z: 0}
-  m_LocalScale: {x: .299057394, y: .299057394, z: .299057394}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 1609094133}
 --- !u!61 &1782308510
@@ -8595,15 +8611,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.x
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.y
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.z
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_Name
@@ -8612,6 +8628,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
@@ -8915,15 +8935,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.x
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.y
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.z
-      value: .299057007
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_Name
@@ -8936,6 +8956,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
@@ -9319,15 +9343,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.x
-      value: .299057394
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.y
-      value: .299057394
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_LocalScale.z
-      value: .299057394
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_Name
@@ -9336,6 +9360,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
+      propertyPath: m_TagString
+      value: Bot
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 06608973e81cefb47a0386b81b39e23c, type: 2}
