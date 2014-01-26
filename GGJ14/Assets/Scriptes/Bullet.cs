@@ -28,8 +28,9 @@ public class Bullet : MonoBehaviour {
 				audio.Play();
 		}
 */
-		if(Time.time > _timeToDie + _nextTime)
-			Destroy(gameObject);
+		if(Time.time > _timeToDie + _nextTime){
+			//Destroy(gameObject);
+		}
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
