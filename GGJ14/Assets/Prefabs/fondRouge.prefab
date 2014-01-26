@@ -150,8 +150,13 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
+<<<<<<< HEAD
     x: -552.900024
     y: 217.5
+=======
+    x: -985.76001
+    y: 288.5
+>>>>>>> 39813635955d6478e790c11f55b3d0db43df1b7c
     width: 352.5
     height: 186
   m_LeftBorder: 0
@@ -169,7 +174,11 @@ GUIText:
   m_Text: vieJ2
   m_Anchor: 4
   m_Alignment: 0
+<<<<<<< HEAD
   m_PixelOffset: {x: -350, y: 345.600006}
+=======
+  m_PixelOffset: {x: -784.5, y: 416.799988}
+>>>>>>> 39813635955d6478e790c11f55b3d0db43df1b7c
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -192,7 +201,11 @@ GUIText:
   m_Text: vitesseJ2
   m_Anchor: 4
   m_Alignment: 0
+<<<<<<< HEAD
   m_PixelOffset: {x: -355.600006, y: 317}
+=======
+  m_PixelOffset: {x: -788.299988, y: 389.399994}
+>>>>>>> 39813635955d6478e790c11f55b3d0db43df1b7c
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -215,7 +228,11 @@ GUIText:
   m_Text: nbBotsJ2
   m_Anchor: 4
   m_Alignment: 0
+<<<<<<< HEAD
   m_PixelOffset: {x: -363.899994, y: 291.140015}
+=======
+  m_PixelOffset: {x: -795.400024, y: 363.399994}
+>>>>>>> 39813635955d6478e790c11f55b3d0db43df1b7c
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -238,7 +255,11 @@ GUIText:
   m_Text: scoreJ2
   m_Anchor: 4
   m_Alignment: 0
+<<<<<<< HEAD
   m_PixelOffset: {x: -427.600006, y: 312.5}
+=======
+  m_PixelOffset: {x: -856.590027, y: 389.399994}
+>>>>>>> 39813635955d6478e790c11f55b3d0db43df1b7c
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
