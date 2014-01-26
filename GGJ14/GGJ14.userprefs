@@ -1,8 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\Menu.cs">
     <Files>
       <File FileName="Assets\Scriptes\Menu.cs" Line="41" Column="4" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\MoveCamera.cs">
+    <Files>
+      <File FileName="Assets\Scriptes\MoveCamera.cs" Line="30" Column="5" />
+>>>>>>> 2537b291ddb58f7d3c52dcc3ac564bf955a0ae70
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

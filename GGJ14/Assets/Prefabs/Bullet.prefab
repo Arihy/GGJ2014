@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   - 82: {fileID: 8200000}
+  - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -43,8 +43,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2378819, y: .133897096, z: 0}
-  m_LocalScale: {x: .204980135, y: .204980299, z: 1}
+  m_LocalPosition: {x: 3.69098425, y: 3.08167624, z: 0}
+  m_LocalScale: {x: .0521894507, y: .0521894991, z: 1}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: .517812967, y: -.479723155, z: .464559436, w: .534714937}
-  m_LocalPosition: {x: -.0191835053, y: .232222095, z: -.132380784}
+  m_LocalPosition: {x: -.750507951, y: -.0545183867, z: -.128230557}
   m_LocalScale: {x: 1.04523861, y: 4.87851763, z: 4.83328295}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -68,8 +68,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.27999997, y: 1.27999997}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: .5, y: 1.73000002}
+  m_Center: {x: -.829999983, y: -1.23000002}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1245,7 +1245,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300004, guid: 6da0ec59940d71345bb5da752537b9eb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2118008c9cb0d6d419d4d20ac94c0eb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
