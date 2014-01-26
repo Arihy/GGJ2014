@@ -23,7 +23,7 @@ public class PlayerController2 : Players {
 			{
 				_nextFire = Time.time + _fireRate;
 				Transform bullet = Instantiate(_bullet, _transform.position, _transform.rotation) as Transform;
-				bullet.particleSystem.startColor = Color.blue;
+				bullet.GetChild(0).particleSystem.startColor = Color.blue;
 				bullet.parent = _transform;
 			}
 		}

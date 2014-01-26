@@ -29,6 +29,10 @@ public class Players : MonoBehaviour {
 	
 	// Update is called once per frame
 	public virtual void Update () {
+        if(_health <= 0)
+        {
+            Application.LoadLevel("Fin");
+        }
 
 	}
 
