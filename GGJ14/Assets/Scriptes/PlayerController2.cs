@@ -28,8 +28,13 @@ public class PlayerController2 : Players {
 				bullet.parent = _transform;
 			}
 		}
-		float rotate = Input.GetAxis("R_XAxis_1");
-		_transform.Rotate(new Vector3(0, 0, -_rotationSpeed * rotate * Time.deltaTime));
+		float rotateX = Input.GetAxis("R_XAxis_1");
+        float rotateY = Input.GetAxis("R_YAxis_1");
+
+        float X = _transform.position.x + rotateX;
+        float Y = _transform.position.y + rotateY;
+
+        _transform.localRotation = Utils.lookAt(_transform.position, new Vector3(X, Y, 0), Vector3.up);
 	}
 	
 	public override void FixedUpdate()

@@ -50,7 +50,5 @@ public class PlayerController : Players {
 		GUI.Label(new Rect(20,340,80,20), "Health : " + _health);
 		GUI.Label(new Rect(20,360,80,20), "Speed : " + _speed);
         GUI.Label(new Rect(20, 380, 80, 20), "Bots : " + Observer.nbBotJ1);
-
-
 	}
 }
