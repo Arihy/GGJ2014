@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerController2 : Players {
 	private float _rotationSpeed;
+	public GUIStyle scoreStyle;
 
 	// Use this for initialization
 	public override void Start()
@@ -46,10 +47,12 @@ public class PlayerController2 : Players {
 	{
 
 		GUI.color = Color.cyan;
-		GUI.Box(new Rect(0, 0, 120, 100), "Player 2");
+		GUI.Box(new Rect(0, 0, Screen.width/10, Screen.height/4), "Player 2");
 		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
         GUI.Label(new Rect(20, 60, 80, 20), "Speed : " + _speed);
         GUI.Label(new Rect(20, 80, 80, 20), "Bots : " + Observer.nbBotJ2);
+
+		GUI.Label(new Rect(350,20,80,100), "Score : " + Observer.scoreJ2, scoreStyle);
         //*/
 	}
 }
