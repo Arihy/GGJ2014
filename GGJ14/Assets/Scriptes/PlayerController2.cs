@@ -11,6 +11,7 @@ public class PlayerController2 : Players {
 		_horizontal = "L_XAxis_1";
 		_vertical = "L_YAxis_1";
 		_rotationSpeed = 150.0f;
+        _team = 2;
 	}
 	
 	// Update is called once per frame
@@ -42,6 +43,8 @@ public class PlayerController2 : Players {
 		GUI.color = Color.cyan;
 		GUI.Box(new Rect(0, 0, 120, 100), "Player 2");
 		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
-		GUI.Label(new Rect(20,60,80,20), "Speed : " + _speed);//*/
+        GUI.Label(new Rect(20, 60, 80, 20), "Speed : " + _speed);
+        GUI.Label(new Rect(20, 80, 80, 20), "Bots : " + Observer.nbBotJ2);
+        //*/
 	}
 }
