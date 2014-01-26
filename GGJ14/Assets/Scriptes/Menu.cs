@@ -27,7 +27,7 @@ public class Menu : MonoBehaviour {
 		if( this.name == "Play") 
 		{
 			Debug.Log ("play");
-			Application.LoadLevel("level1");
+			cam.transform.Translate(40,0,0);
 		}
 
 		if( this.name == "PlayWB") 
@@ -52,6 +52,23 @@ public class Menu : MonoBehaviour {
 		if( this.name == "Back") 
 		{
 			Debug.Log ("return");
+			cam.transform.Translate(40,0,0);
+		}
+		if( this.name == "Back2") 
+		{
+			Debug.Log ("return");
+			cam.transform.Translate(-40,0,0);
+		}
+		if( this.name == "city") 
+		{
+			Debug.Log ("return");
+			Application.LoadLevel("level1");
+			cam.transform.Translate(40,0,0);
+		}
+		if( this.name == "house") 
+		{
+			Debug.Log ("return");
+			Application.LoadLevel("");
 			cam.transform.Translate(40,0,0);
 		}
 
