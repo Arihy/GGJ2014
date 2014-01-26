@@ -161,11 +161,11 @@ public class IAEnemy : MonoBehaviour {
 			}*/
 
 
-			if(voitPlayer()){
+			/*if(voitPlayer()){
 				Debug.Log("etat : " + etat);
 				Debug.Log("voit joueur");
 				etat = 2;
-			}
+			}//*/
 		}
 
 		if(etat == 2){
@@ -193,18 +193,13 @@ public class IAEnemy : MonoBehaviour {
 				changeDirection();
 				
 			}
-			/*else{
-				movingTo = new Vector3(transform.position.x + Random.Range(-a, a) * Time.deltaTime,
-				                       transform.position.y * Time.deltaTime + Random.Range(-a,a),
-				                       0);
-			}//*/
 
-			if(voitPlayer()){
+			/*if(voitPlayer()){
 				etat = 2;
 			}
 			else{
 				etat = 1;
-			}
+			}//*/
 		}//*/
 
 
@@ -217,6 +212,7 @@ public class IAEnemy : MonoBehaviour {
 			etat = 3;
 			gameObject.GetComponent<SpriteRenderer>().color = Color.red;
 			//other.gameObject.GetComponent<SpriteRenderer>().color = 
+			Debug.Log(other.transform.parent.gameObject.name);
 
 		}
 	}//*/
