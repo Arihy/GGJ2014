@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 217c9d2bafae89b46ac91206a0d47a33
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - fatigue: {fileID: 8300000, guid: bc385606ce419184da05aaded89136c7, type: 3}
+  - _bullet: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
