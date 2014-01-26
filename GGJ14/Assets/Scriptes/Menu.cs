@@ -30,6 +30,12 @@ public class Menu : MonoBehaviour {
 			Application.LoadLevel("level1");
 		}
 
+		if( this.name == "PlayWB") 
+		{
+			Debug.Log ("play");
+			Application.LoadLevel("");
+		}
+
 		if( this.name == "Help") 
 		{
 			Debug.Log ("help");
