@@ -11,6 +11,7 @@ public class PlayerController2 : Players {
 		_horizontal = "L_XAxis_1";
 		_vertical = "L_YAxis_1";
 		_rotationSpeed = 150.0f;
+        _team = 2;
 	}
 	
 	// Update is called once per frame

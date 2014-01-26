@@ -11,6 +11,7 @@ public class PlayerController : Players {
 		base.Start();
 		_horizontal = "Horizontal";
 		_vertical = "Vertical";
+        _team = 1;
 	}
 	
 	// Update is called once per frame
@@ -48,5 +49,4 @@ public class PlayerController : Players {
 		GUI.Label(new Rect(20,40,80,20), "Health : " + _health);
 		GUI.Label(new Rect(20,60,80,20), "Speed : " + _speed);
 	}
-
 }
