@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour {
 	private float _speed;
 	private float _timeToDie;
 	private float _nextTime;
+	public Transform particule;
 
 	/*
 	public AudioClip Impact;
@@ -35,5 +36,8 @@ public class Bullet : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		Destroy(gameObject);
+
+		if((other.name != "Player2") && (other.name != "Player"))
+			Instantiate(particule,this.transform.position, this.transform.rotation);
 	}
 }

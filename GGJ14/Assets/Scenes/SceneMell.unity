@@ -1268,6 +1268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bullet: {fileID: 400000, guid: 0dee44c83a9294d4a86a1d3e04657e76, type: 2}
+  particule: {fileID: 400000, guid: c6e79ada917f8f940ba6801f3e8ec46c, type: 2}
   scoreStyle:
     m_Name: 
     m_Normal:
@@ -5871,6 +5872,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bd24f041cf4b0a745867bed602a478a2, type: 2}
+      propertyPath: particule
+      value: 
+      objectReference: {fileID: 400000, guid: c6e79ada917f8f940ba6801f3e8ec46c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd24f041cf4b0a745867bed602a478a2, type: 2}
   m_RootGameObject: {fileID: 1133724390}
@@ -6726,6 +6731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bullet: {fileID: 400000, guid: 0dee44c83a9294d4a86a1d3e04657e76, type: 2}
+  particule: {fileID: 400000, guid: c6e79ada917f8f940ba6801f3e8ec46c, type: 2}
   scoreStyle:
     m_Name: 
     m_Normal:
