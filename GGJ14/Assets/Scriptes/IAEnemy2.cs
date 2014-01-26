@@ -201,7 +201,7 @@ public class IAEnemy2 : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Bullet")){
 			
-			etat = 3;
+			//etat = 3;
 			gameObject.GetComponent<SpriteRenderer>().sprite = other.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite;
 			//other.gameObject.GetComponent<SpriteRenderer>().color = 
 			//Debug.Log(other.transform.parent.gameObject.name);
