@@ -1,6 +1,10 @@
 ﻿<Properties>
 <<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench />
+=======
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\PlayerController2.cs">
     <Files>
       <File FileName="Assets\Scriptes\IAEnemy2.cs" Line="1" Column="1" />
@@ -33,6 +37,7 @@
 >>>>>>> d0c66de1a28e5e59767353b28211cfb40f142c26
     </Files>
   </MonoDevelop.Ide.Workbench>
+>>>>>>> 37ffb163c6467e6bd6045c05e2ea99683c5d0976
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
